@@ -1,0 +1,13 @@
+{% for recentPost in site.posts limit:4 %}
+
+            <h4>Recent Posts</h4>
+		 		<div class="hline"></div>
+					<ul class="popular-posts">
+		                <li>
+		                    <a href="{{site.baseurl}}{{recentPost.url}}"><img src={{site.baseurl}}/{{recentPost.img}} alt="Popular Post"></a>
+		                    <p><a href="{{site.baseurl}}{{recentPost.url}}">{{recentPost.title}}</a></p>
+		                    <em>Posted on {{recentPost.date | date_to_long_string}}</em>
+		                </li>
+		            </ul>
+		            
+{% endfor %}

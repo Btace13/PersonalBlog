@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+	<!-- *****************************************************************************************************************
+	 BLOG CONTENT
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row">
+	 	
+	 		<! -- SINGLE POST -->
+	 		<div class="col-lg-8">
+	 			<! -- Blog Post 1 -->
+		 		<p><img class="img-responsive" src={{site.baseurl}}/{{page.img}}></p>
+		 		<a href="{{site.baseurl}}{{page.url}}"><h3 class="ctitle">{{page.title}}</h3></a>
+		 		<p><csmall>Posted: {{page.date | date_to_long_string}}</csmall> | <csmall2>By: {{page.author}}</csmall2></p>
+		 		<p>{{content}}</p>
+		 	    <div class="spacing"></div>
+		 		<h6>SHARE:</h6>
+		 		<p class="share">
+		 			<a href="#"><i class="fa fa-twitter"></i></a>
+		 			<a href="#"><i class="fa fa-facebook"></i></a>
+		 			<a href="#"><i class="fa fa-tumblr"></i></a>
+		 			<a href="#"><i class="fa fa-google-plus"></i></a>		 		
+		 		</p>
+		 		
+			</div><! --/col-lg-8 -->
+	 		
+	 			{% include sidebar.html %}
+	 		
+	 	</div><! --/row -->
+	 </div><! --/container -->

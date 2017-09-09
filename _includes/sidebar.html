@@ -1,0 +1,54 @@
+	 		<! -- SIDEBAR -->
+	 		<div class="col-md-4">
+		 		<h4 style="font-size: 30pt;">Subscribe!</h4>
+		 		<div class="hline"></div>
+		 			<p>
+		 				<input type="text" class="form-control" placeholder="Email">
+		 				<div class="btn btn-primary">Subscribe</div>
+		 			</p>
+		 			
+		 		<div class="spacing"></div>
+		 		
+		 		<h4>Categories</h4>
+		 		<div class="hline"></div>
+		 		
+		 			
+					   
+		 			{% assign categories = site.categories | sort %}
+				    {% for category in categories %}
+				     <p class="site-tag">
+				        <a id="orange" href="{{site.baseurl}}/categories/{{ category | first | slugify }}.html">
+				                {{ category[0] | capitalize | replace:'-', ' ' }} (<span style="color: #fff">{{ category | last | size }}</span>)
+				        </a>
+				    </p>
+				    {% endfor %}
+				    
+
+		 		<div class="spacing"></div>
+		 		
+		 		{% include recentPosts.html %}
+		            
+		 		<div class="spacing"></div>
+		 		
+		 		<!--<h4>Popular Tags</h4>-->
+		 		<!--<div class="hline"></div>-->
+		 		<!--	<p>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Design</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Wordpress</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Flat</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Modern</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Wallpaper</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">HTML5</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Pre-processor</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Developer</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Windows</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Phothosop</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">UX</a>-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Interface</a>		            	-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">UI</a>		            	-->
+		   <!--         	<a class="btn btn-theme" href="#" role="button">Blog</a>		            	-->
+		 		<!--	</p>-->
+		 			<a href="http://wickedtiess.etsy.com" target="_blank">
+	 		<img width="80%" src="{{site.baseurl}}/img/WickedTiesAd.jpg" alt="" class="img img-repsonsive">
+	 		</a>
+	 		</div>
