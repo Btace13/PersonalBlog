@@ -2,7 +2,7 @@
 layout: post
 author: Enrique Urbina
 category: movies
-img: img/IT.jpg
+img: img/post/IT.jpg
 title: IT Movie Review *Spoiler Free*
 meta: If You Love Mom Jokes, You'll Love This Movie!
 ---
